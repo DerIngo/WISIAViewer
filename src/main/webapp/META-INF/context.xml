@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+  <JarScanner>
+    <JarScanFilter tldScan="standard-1.1.2.jar,jstl-1.2.jar,javax.faces-2.2.20.jar" defaultTldScan="false" defaultPluggabilityScan="false"/>
+  </JarScanner>
+</Context>
