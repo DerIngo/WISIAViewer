@@ -14,7 +14,7 @@
     <primefaces.version>12.0.0</primefaces.version>
     <!-- Do not use org.glassfish Mojarra 2.4.0! --> 
     <!-- https://balusc.omnifaces.org/2018/04/do-not-use-orgglassfish-mojarra-240.html -->
-    <mojarra.version>2.2.20</mojarra.version> <!-- !!! MUSS auch in der context.xml angepasst werden !!! -->
+    <mojarra.version>2.3.7</mojarra.version> <!-- !!! MUSS auch in der context.xml angepasst werden !!! -->
     <org.slf4j.version>1.7.32</org.slf4j.version>
   </properties>
   
