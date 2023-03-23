@@ -34,12 +34,21 @@
         </p:column>
         
         <p:column headerText="LandesprNamen">
-          <ui:repeat var="landesprName" value="#{item.landesprNamen}">
-            <span class="flag-icon flag-icon-#{fn:toLowerCase(msg['flag.'.concat(landesprName.land)])}" />
+          <ui:fragment rendered="#{not empty item.deutscherName}">
+            <span class="flag-icon flag-icon-de" />
             <p:spacer width="10px;"/>
-            <p:tooltip for="@next" value="#{landesprName.landessprachlicherName}" />
-            <h:outputText id="ln" value="#{landesprName.landessprachlicherName}" /><br/>
-          </ui:repeat>
+            <p:tooltip for="@next" value="#{item.deutscherName}" />
+            <h:outputText id="lnde" value="#{item.deutscherName}" />
+          </ui:fragment>
+          <ui:fragment rendered="#{(not empty item.deutscherName) and (not empty item.englischerName)}">
+            <br/>
+          </ui:fragment>
+          <ui:fragment rendered="#{not empty item.englischerName}">
+            <span class="flag-icon flag-icon-gb" />
+            <p:spacer width="10px;"/>
+            <p:tooltip for="@next" value="#{item.englischerName}" />
+            <h:outputText id="lnen" value="#{item.englischerName}" />
+          </ui:fragment>
         </p:column>
         
         <p:column headerText="Regelwerke">
