@@ -15,7 +15,7 @@
     <!-- Do not use org.glassfish Mojarra 2.4.0! --> 
     <!-- https://balusc.omnifaces.org/2018/04/do-not-use-orgglassfish-mojarra-240.html -->
     <mojarra.version>2.2.20</mojarra.version> <!-- !!! MUSS auch in der context.xml angepasst werden !!! -->
-    <org.slf4j.version>1.7.32</org.slf4j.version>
+    <org.slf4j.version>2.0.7</org.slf4j.version>
   </properties>
   
   <dependencies>
